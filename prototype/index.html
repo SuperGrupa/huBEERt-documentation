@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Simple prototype for huBEERt project.">
+    <meta name="author" content="SuperGrupa">
+
+    <title>huBEERt - Prototype GUI</title>
+
+    <link href="bootstrap/bootstrap.css" rel="stylesheet">
+    <link href="bootstrap/bootstrap-theme.css" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link href="style.css" rel="stylesheet">
+    
+  </head>
+
+  <body>
+
+    <nav class='navbar navbar-default'>
+      <div class='container-fluid'>
+        <div class='navbar-header'>
+          <div class='navbar-brand'>
+            <p class='navbar-right'>
+              <a href="index.html">
+                huBEERt
+              </a>
+            </p>
+          </div>
+        </div>
+        <div class='btn-group pull-right'>
+          <p class='navbar-text navbar-right'>
+            <a href="signUp.html">Zarejestruj</a>
+            |
+            <a href="signIn.html">Zaloguj</a>
+          </p>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <div class="container">
+
+      <form class="form-horizontal" action="lista.html">         
+        <div class="form-group">
+          <label class="col-sm-5 control-label">Wybierz miasto:</label>
+          <div class="col-sm-5">
+            <select class="form-control">
+              <option>Gdańsk</option>
+              <option>Kraków</option>
+              <option selected="selected">Poznań</option>
+              <option>Warszawa</option>            
+              <option>Wrocław</option>            
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-3 control-label">Nazwa:</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" placeholder="Szukaj według nazwy">
+          </div> 
+        </div> 
+        <div class="form-group">
+          <label class="col-sm-3 control-label">Nazwa Piwa:</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" placeholder="Szukaj według nazwy piwa">
+          </div> 
+        </div> 
+        <div class="form-group">
+          <label class="col-sm-3 control-label">Cena piwa:</label>
+          <div class="col-sm-3">
+            <input type="number" class="form-control" placeholder="Od">
+          </div>
+          <div class="col-sm-2 text-center">
+            <i class="fa fa-minus" style="margin: 8px;"></i>
+          </div>
+          <div class="col-sm-3">
+            <input type="number" class="form-control" placeholder="Do">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-3 control-label">Cena shotów:</label>
+          <div class="col-sm-3">
+            <input type="number" class="form-control" placeholder="Od">
+          </div>
+          <div class="col-sm-2 text-center">
+            <i class="fa fa-minus" style="margin: 8px;"></i>
+          </div>
+          <div class="col-sm-3">
+            <input type="number" class="form-control" placeholder="Do">
+          </div>
+        </div>
+        <div class="text-center">
+          <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox1" value="option1"> Piwa rzemieślnicze
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox2" value="option2"> Piwa bezalkoholowe
+          </label>
+          <br>
+          <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox3" value="option3"> Drinki
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox3" value="option3"> Wino
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox3" value="option3"> Whisky
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox3" value="option3"> Likier
+          </label>
+          <br>
+          <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox3" value="option3"> TV
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox3" value="option3"> Stół bilardowy
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox3" value="option3"> Darts
+          </label>
+
+        </div>
+        <br>
+        <button type="submit" class="btn btn-primary btn-lg btn-block" style="margin-top: 20px;">Szukaj</button>
+      </form>
+	  
+    </div>
+    
+    <script src="jquery/jquery.min.js"></script>
+    <script src="bootstrap/bootstrap.js"></script>
+  </body>
+</html>
