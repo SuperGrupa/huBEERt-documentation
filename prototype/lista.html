@@ -18,90 +18,63 @@
   </head>
 
   <body>
+	<header>
+		<nav class='navbar navbar-default'>
+		  <div class='container-fluid'>
+			<div class='navbar-header'>
+			  <div class='navbar-brand'>
+				<p class='navbar-right'>
+				  <a href="index.html">
+					huBEERt
+				  </a>
+				</p>
+			  </div>
+			</div>
+			<div class='btn-group pull-right'>
+			  <p class='navbar-text navbar-right'>
+				<a href="signUp.html">Zarejestruj</a>
+				|
+				<a href="signIn.html">Zaloguj</a>
+			  </p>
+			</div>
+		  </div>
+		</nav>
+	</header>
 
-    <nav class='navbar navbar-default'>
-      <div class='container-fluid'>
-        <div class='navbar-header'>
-          <div class='navbar-brand'>
-            <p class='navbar-right'>
-              <a href="index.html">
-                huBEERt
-              </a>
-            </p>
-          </div>
-        </div>
-        <div class='btn-group pull-right'>
-          <p class='navbar-text navbar-right'>
-            <a href="signUp.html">Zarejestruj</a>
-            |
-            <a href="signIn.html">Zaloguj</a>
-          </p>
-        </div>
-      </div>
-    </nav>
 
-
-    <div class="container" style="margin-bottom: 100px">
-      
-      <table class="table table-striped table-hover">
-        <col width="150">
-        <col width="80">
-        <col width="100">
-        <col width="100">
-        <thead>
-          <tr>
-            <th style="font-size:150%; line-height: 200%">Nazwa lokalu</th>
-            <th style="line-height: 200%">
-              Adres<br/>
-              Godziny otwarcia
-            </th>
-            <th style="font-size:150%; line-height: 200%">Inne napitki</th>
-            <th style="font-size:150%; line-height: 200%">Dodatkowe rozrywki</th>
-          </tr>
-          <tr>
-           
-          </tr>
-        </thead>
+    <div class="container" style="margin-bottom: 100px">  
+	<h1>Proponowane puby i bary w mieście <b>Poznań</b>: </h1>
+	<br/>
+      <table class="table table-striped table-hover" 150,280,50>
+        <col width="30%">
+        <col width="60%">
+        <col width="10%">
         <tbody>
             <tr style="height: 70px" onclick="window.document.location='klub.html'">
-              <td style="font-size:150%">U Szwagra</td>
-              <td style="line-height: 200%">
-                Żydowska 55<br/>
-                15:00 - 01:00
-              </td>
-              <td>piwa rzemieślnicze, drinki, whisky</td>
-              <td>TV, stół bilardowy</td>
-            </tr>
-          <tr style="height: 70px" onclick="window.document.location='klub.html'">
-            <td style="font-size:150%">Adonis</td>
-            <td style="line-height: 200%">
-              Długa 12/3<br/>
-              19:00 - 02:00
-            </td>
-            <td>wino, likier</td>
-            <td>TV, darts</td>
-          </tr>
-          <tr style="height: 70px" onclick="window.document.location='klub.html'">
-            <td style="font-size:150%">Moher</td>
-            <td style="line-height: 200%">
-              Stary Rynek 16<br/>
-              13:00 - 22:00
-            </td>
-            <td>piwa bezalkoholowe, whisky, likier</td>
-            <td>stół bilardowy, darts</td>
-          </tr>
-          <tr style="height: 70px" onclick="window.document.location='klub.html'">
-            <td style="font-size:150%">Volodimir</td>
-            <td style="line-height: 200%">
-              Kramarska 62<br/>
-              17:00 - 02:00
-            </td>
-            <td>piwa rzemieślnicze, piwa bezalkoholowe, drinki, whisky, likier</td>
-            <td>TV, stół bilardowy, darts </td>
-          </tr>
+              <td style="font-size:250%">U Szwagra<br/><h5>Żydowska 55<br/>15:00 - 01:00<h5></td>
+              <td class="prices">
+				Piwo: 5 - 8 zł <br/> Wódka: 4 - 8 zł <br/> Przekąski: 6 - 10 zł 
+				<hr/> Piwa rzemieślnicze, drinki, whisky, TV, stół bilardowy
+				</td>
+			  <td class="score"> Ocena:<br/>3.8/5.0</td>
+			 </tr>
+            <tr style="height: 70px" onclick="window.document.location='klub.html'">
+              <td style="font-size:250%">Adonis<br/><h5>Długa 12/3<br/>19:00 - 02:00<h5></td>
+              <td class="prices">Piwo: 8 - 10 zł <br/> Wódka: 4 - 8 zł <br/> Przekąski: 3 - 5 zł <hr/>Wino, likier, TV, darts, gry planszowe</td>
+			  <td class="score"> Ocena:<br/>4.3/5.0</td>
+			 </tr>
+            <tr style="height: 70px" onclick="window.document.location='klub.html'">
+              <td style="font-size:250%">Moher<br/><h5>Stary Rynek 16<br/>13:00 - 22:00<h5></td>
+              <td class="prices">Piwo: 5 - 8 zł <br/> Wódka: 6 - 8 zł <br/> Przekąski: 5 - 8 zł <hr/>piwa bezalkoholowe, whisky, likier, darts, stół bilardowy</td>
+			  <td class="score"> Ocena:<br/>4.8/5.0</td>
+			 </tr>
+            <tr style="height: 70px" onclick="window.document.location='klub.html'">
+              <td style="font-size:250%">Volodimir<br/><h5>Kramarska 62<br/>17:00 - 02:00<h5></td>
+              <td class="prices">Piwo: 8 - 12 zł <br/> Wódka: 8 - 10 zł <br/> Przekąski: 6 - 10 zł <hr/>piwa rzemieślnicze, piwa bezalkoholowe, whisky, likier, TV, stół bilardowy</td>
+			  <td class="score"> Ocena:<br/>2.8/5.0</td>
+			 </tr>
         </tbody>
-      </table>
-      
+      </table>      
     </div>
     
     <script src="jquery/jquery.min.js"></script>

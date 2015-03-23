@@ -968,6 +968,10 @@ hr {
   border: 0;
   border-top: 1px solid #eee;
 }
+td>hr {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
 .sr-only {
   position: absolute;
   width: 1px;
@@ -1395,17 +1399,17 @@ pre code {
 }
 @media (min-width: 768px) {
   .container {
-    width: 750px;
+    width: 530px;
   }
 }
 @media (min-width: 992px) {
   .container {
-    width: 970px;
+    width: 760px;
   }
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 960px;
   }
 }
 .container-fluid {
@@ -1594,7 +1598,7 @@ pre code {
     width: 83.33333333%;
   }
   .col-sm-9 {
-    width: 75%;
+    width: 85%;
   }
   .col-sm-8 {
     width: 66.66666667%;
@@ -2071,6 +2075,9 @@ th {
   max-width: 100%;
   margin-bottom: 20px;
 }
+.table > thead  > tr > th{
+text-align:center;
+}
 .table > thead > tr > th,
 .table > tbody > tr > th,
 .table > tfoot > tr > th,
@@ -2081,6 +2088,10 @@ th {
   line-height: 1.42857143;
   vertical-align: top;
   border-top: 1px solid #ddd;
+}
+.table > tbody > tr > th,
+.table > tbody > tr > td {
+  cursor: pointer;
 }
 .table > thead > tr > th {
   vertical-align: bottom;
@@ -6330,3 +6341,7 @@ button.close {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+
+#advanced {
+	display: none;
+}

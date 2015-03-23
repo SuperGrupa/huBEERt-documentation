@@ -11,3 +11,14 @@ form {
 .navbar {
 	margin-bottom: 100px;
 }
+
+td.prices {
+	padding-top:20px;
+	vertical-align: middle !important;
+}
+
+td.score {
+ text-align:center;
+ vertical-align:middle !important;
+ font-size:130%;
+}
