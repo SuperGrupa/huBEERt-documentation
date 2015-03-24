@@ -915,12 +915,11 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #337ab7;
+  color: #E5E5E5;#337ab7;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #23527c;
   text-decoration: underline;
 }
 a:focus {
@@ -1396,6 +1395,8 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 @media (min-width: 768px) {
   .container {
@@ -4172,8 +4173,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-  background-color: #f8f8f8;
-  border-color: #e7e7e7;
 }
 .navbar-default .navbar-brand {
   color: #777;
