@@ -14,6 +14,8 @@
 		<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
 		<link href="style.css" rel="stylesheet">
 		
+		<script src="jquery/jquery.min.js"></script>
+		
 	</head>
 	<body>
 		<header>
@@ -34,128 +36,46 @@
 		</header>
 		
 		<div class="container">
-			<h1 style="text-align:center;">
+			<h1 class="bbox" style="text-align:center;">
 				Proponowane puby i bary w mieście: <span class="searched-city">Poznań</span>
 			</h1>
 			<br/>
-			<table class="results table table-hover">
+			<table class="results table table-hover wowlol">
 				<tbody>
-					<tr onclick="window.document.location='klub.html'">
-						<td>
-							<img src="bar1.jpg" style="width:100px;height:100px">
-						</td>
-						<td>
-							U Szwagra<br/>
-							<h5 class="address">
-								Żydowska 55<br/>
-								15:00 - 01:00
-							</h5>
-						</td>
-						<td class="prices">
-							Piwo: 5 - 8 zł<br/>
-							Wódka: 4 - 8 zł<br/>
-							Przekąski: 6 - 10 zł 
-							<hr>Piwa rzemieślnicze, drinki, whisky, TV, stół bilardowy
-						</td>
-						<td class="score">
-							Ocena:<br/>
-							3.8/5.0
-						</td>
-					</tr>
-					
-					<tr onclick="window.document.location='klub.html'">
-						<td>
-							<img src="bar2.jpg" style="width:100px;height:100px">
-						</td>
-						<td>
-							Adonis<br/>
-							<h5 class="address">
-								Długa 12/3<br/>
-								19:00 - 02:00
-							</h5>
-						</td>
-						<td class="prices">
-							Piwo: 8 - 10 zł<br/>
-							Wódka: 4 - 8 zł<br/>
-							Przekąski: 3 - 5 zł
-							<hr>Wino, likier, TV, darts, gry planszowe
-						</td>
-						<td class="score">
-							Ocena:<br/>
-							4.3/5.0
-						</td>
-					</tr>
-					
-					<tr onclick="window.document.location='klub.html'">
-						<td>
-							<img src="bar3.jpg" style="width:100px;height:100px">
-						</td>
-						<td>
-							Moher<br/>
-							<h5 class="address">
-								Stary Rynek 16<br/>
-								13:00 - 22:00
-							</h5>
-						</td>
-						<td class="prices">
-							Piwo: 5 - 8 zł<br/>
-							Wódka: 6 - 8 zł<br/>
-							Przekąski: 5 - 8 zł
-							<hr/>piwa bezalkoholowe, whisky, likier, darts, stół bilardowy
-						</td>
-						<td class="score">
-							Ocena:<br/>
-							4.9/5.0
-						</td>
-					</tr>
-					
-					<tr onclick="window.document.location='klub.html'">
-						<td>
-							<img src="bar4.jpg" style="width:100px;height:100px">
-						</td>
-						<td>
-							Volodimir<br/>
-							<h5 class="address">
-								Kramarska 62<br/>
-								17:00 - 02:00
-							</h5>
-						</td>
-						<td class="prices">
-							Piwo: 8 - 12 zł<br/>
-							Wódka: 8 - 10 zł<br/>
-							Przekąski: 6 - 10 zł
-							<hr/>piwa rzemieślnicze, piwa bezalkoholowe, whisky, likier, TV, stół bilardowy
-						</td>
-						<td class="score">
-							Ocena:<br/>
-							4.2/5.0
-						</td>
-					</tr>
-					
-					<tr onclick="window.document.location='klub.html'">
-						<td>
-							<img src="bar5.jpg" style="width:100px;height:100px">
-						</td>
-						<td>
-							Remiza<br/>
-							<h5 class="address">
-								Bułgarska 52<br/>
-								18:00 - 02:00
-							</h5>
-						</td>
-						<td class="prices">
-							Piwo: 7 - 10 zł<br/>
-							Wódka: 8 - 13 zł<br/>
-							Przekąski: 4 - 12 zł
-							<hr/>piwa rzemieślnicze, likier, TV, darts, stół bilardowy
-						</td>
-						<td class="score">
-							Ocena:<br/>
-							3.5/5.0
-						</td>
-					</tr>
+					<script type="text/javascript">
+						$(function () {
+							$.getJSON("data/pubs.json", function(data) {
+								$.each(data, function(i, obj) {
+									$(".wowlol tbody").append(
+										"<tr onclick=\"window.document.location='klub.html'\">" +
+											"<td>" +
+												"<img src=\"bar" + obj.PicID + ".jpg\" style=\"width:100px;height:100px\">" +
+											"</td>" +
+											"<td>" +
+												obj.Name + "<br/>" +
+												"<h5 class=\"address\">" +
+													obj.Address + "<br/>" +
+													obj.Time +
+												"</h5>" +
+											"</td>" +
+											"<td class=\"prices\">" +
+												"Piwo: " + obj.Beer + " zł" + "<br/>" +
+												"Shoty: " + obj.Shots + " zł" + "<br/>" +
+												"Przekąski: " + obj.Snacks + " zł" +
+												"<hr>" + obj.Other +
+											"</td>" +
+											"<td class=\"score\">" +
+												"Ocena:<br/>" +
+												obj.Rating +
+											"</td>" +
+										"</tr>"
+									);
+								});
+							});
+						});
+					</script>
 				</tbody>
-			</table>			
+			</table>
 		</div>
 	
 		<footer>
@@ -165,7 +85,6 @@
 			</h1>
 		</footer>
 		
-		<script src="jquery/jquery.min.js"></script>
 		<script src="bootstrap/js/bootstrap-3.3.1.js"></script>
 	</body>
 </html>

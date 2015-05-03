@@ -6,19 +6,22 @@
 	margin-right: 0px;
 }
 
-.form-horizontal {
-	margin-top: 50px;
-}
-
 body {
 	background: #FFFFFF url("background.jpg") fixed;
 }
 
 form {
-	width: 500px;
+	width: 600px;
 	margin-left: auto;
 	margin-right: auto;
 	font-size: 100%;
+}
+
+.bbox {
+	background-color: rgba(220, 200, 20, 0.75);
+	border: 3px solid rgba(140, 140, 140, 0.5);
+	border-radius: 15px;
+	padding: 20px;
 }
 
 .searched-city{
@@ -26,14 +29,13 @@ form {
 }
 
 .results tr{
-	background: #FFC500;
+	background: rgba(220, 200, 20, 0.75);
 	border-top: 2px solid #DDD;
 	border-bottom: 2px solid #DDD;
-	
 }
 
 .results tr:hover{
-	background: #CEBDA1 !important;
+	background: #FFFFFF !important;
 }
 
 .results td:nth-child(1){
@@ -41,11 +43,45 @@ form {
 }
 
 .results td:nth-child(2){
+	width: 150px;
 	font-size: 150%;
 }
 
 .results td:nth-child(2) h5{
-	color: #666666;
+	color: #444444;
+}
+
+.results td:nth-child(4){
+	width: 85px;
+}
+
+.pub-title{
+	font-weight: bold;
+}
+
+.comments tr{
+	background: rgba(220, 200, 20, 0.75);
+	border-top: 2px solid #DDD;
+	border-bottom: 2px solid #DDD;
+}
+
+.comments tbody tr:hover td{
+	cursor: auto !important;
+}
+
+.comments td:nth-child(1){
+	width: 125px;
+	font-size: 80%;
+	font-weight: bold
+}
+
+.comments td:nth-child(1) h5{
+	color: #444444;
+}
+
+.timestamp{
+	font-size: 80%;
+	
 }
 
 .address{
@@ -62,6 +98,14 @@ td.score {
 	text-align:center;
 	vertical-align: middle !important;
 	font-size: 130%;
+}
+
+.pub-info h4 small{
+	color: #333333;
+}
+
+.list-group-item {
+	background-color: rgba(255, 255, 255, 0.25);
 }
 
 header {
@@ -103,7 +147,6 @@ footer img {
 	padding-left: 50px;
 }
 
-#moreoptions, #newbeer {
-	color: #333;
+table, tr, td, th{
+	border: 1px solid black;
 }
-

@@ -14,6 +14,7 @@
 		<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
 		<link href="style.css" rel="stylesheet">
 		
+		<script src="jquery/jquery.min.js"></script>
 		<script type="text/javascript" src="script.js"></script>
 		
 	</head>
@@ -36,7 +37,7 @@
 		</header>
 		
 		<div class="container">
-			<form class="form-horizontal" action="lista.html">
+			<form class="form-horizontal bbox" action="lista.html">
 				<div class="form-group">
 					<label class="col-sm-5 control-label">Wybierz miasto:</label>
 					<div class="col-sm-5">
@@ -50,27 +51,15 @@
 					</div>
 				</div>
 				
-				<div class="form-group">
-					<div class="col-sm-9">
-						<input type="text" class="form-control" placeholder="Pub, bar, piwo, atrakcje">
-					</div>
-					
-					<div align="center" style="float:right;padding-top:10px;margin-left:0px;">
-						<a href="#" id="moreoptions" onclick="toggle_visibility('advanced')">Więcej opcji</a>
-					</div>
+				<div class="input-group">
+					<input type="text" class="form-control" placeholder="Pub, bar, piwo, atrakcje">
+					<span class="input-group-btn">
+						<button type="submit" class="btn btn-primary btn-md">Szukaj</button>
+					</span>
 				</div>
 				
 				<div id="advanced">
 					<br/>
-					<div class="form-group">
-						<div class="col-sm-9" id="beers">
-							<input type="text" class="form-control" placeholder="Szukaj według nazwy piwa" id="beer1">
-						</div>
-						<div align="center" style="float:right;padding-top:10px;margin-left:0px;">
-							<a href="#" id="newbeer" onclick="next_beer('beers')">Kolejne piwo</a>
-						</div>
-					</div>
-					
 					<div class="form-group">
 						<label class="col-sm-3 control-label">Cena piwa:</label>
 						<div class="col-sm-3">
@@ -97,43 +86,47 @@
 						</div>
 					</div>
 					
-					<div class="text-center">
+					<!--div class="text-center">
 						<label class="checkbox-inline">
-							<input type="checkbox" id="inlineCheckbox3" value="option3"> Wódka
+							<input type="checkbox" id="inlineCheckbox1" value="option1"> Wódka
 						</label>
 						<label class="checkbox-inline">
-							<input type="checkbox" id="inlineCheckbox3" value="option3"> Drinki
+							<input type="checkbox" id="inlineCheckbox2" value="option2"> Drinki
 						</label>
 						<label class="checkbox-inline">
 							<input type="checkbox" id="inlineCheckbox3" value="option3"> Wino
 						</label>
 						<label class="checkbox-inline">
-							<input type="checkbox" id="inlineCheckbox3" value="option3"> Whisky
+							<input type="checkbox" id="inlineCheckbox4" value="option4"> Whisky
 						</label>
 						<label class="checkbox-inline">
-							<input type="checkbox" id="inlineCheckbox3" value="option3"> Likier
+							<input type="checkbox" id="inlineCheckbox5" value="option5"> Likier
 						</label>
 						
 						<br/>
 						<label class="checkbox-inline">
-							<input type="checkbox" id="inlineCheckbox3" value="option3"> TV
+							<input type="checkbox" id="inlineCheckbox6" value="option6"> TV
 						</label>
 						<label class="checkbox-inline">
-							<input type="checkbox" id="inlineCheckbox3" value="option3"> Stół bilardowy
+							<input type="checkbox" id="inlineCheckbox7" value="option7"> Stół bilardowy
 						</label>
 						<label class="checkbox-inline">
-							<input type="checkbox" id="inlineCheckbox3" value="option3"> Darts
+							<input type="checkbox" id="inlineCheckbox8" value="option8"> Darts
 						</label>
 						<label class="checkbox-inline">
-							<input type="checkbox" id="inlineCheckbox3" value="option3"> Gry planszowe
+							<input type="checkbox" id="inlineCheckbox9" value="option9"> Gry planszowe
 						</label>
 						<label class="checkbox-inline">
-							<input type="checkbox" id="inlineCheckbox3" value="option3"> Gry wideo
+							<input type="checkbox" id="inlineCheckbox10" value="option10"> Gry wideo
 						</label>
-					</div>
+					</div-->
 				</div>
 				
-				<button type="submit" class="btn btn-primary btn-lg btn-block" style="margin-top: 20px;">Szukaj</button>
+				<div align="center">
+					<button type="button" id="moreoptions" class="btn btn-primary btn-md" align="center" style="margin-top: 30px;" onclick="toggle_visibility('advanced')">
+						Więcej opcji
+					</button>
+				</div>
 			</form>
 		</div>
 		
@@ -144,7 +137,6 @@
 			</h1>
 		</footer>
 		
-		<script src="jquery/jquery.min.js"></script>
 		<script src="bootstrap/js/bootstrap-3.3.1.js"></script>
 	</body>
 </html>

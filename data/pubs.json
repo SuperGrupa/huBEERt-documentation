@@ -1,0 +1,7 @@
+[
+	{ "Name" : "U Szwagra", "PicID" : "1", "Address" : "Żydowska 55", "Time" : "15:00 - 01:00", "Beer" : "5 - 8", "Shots" : "4 - 8", "Snacks" : "6 - 10", "Other" : "piwa rzemieślnicze, drinki, whisky, TV, stół bilardowy", "Rating" : "3.8\/5.0" },
+	{ "Name" : "Adonis", "PicID" : "2", "Address" : "Długa 12\/3", "Time" : "19:00 - 02:00", "Beer" : "8 - 10", "Shots" : "4 - 8", "Snacks" : "3 - 5", "Other" : "wino, likier, TV, darts, gry planszowe", "Rating" : "4.3\/5.0" },
+	{ "Name" : "Moher", "PicID" : "3", "Address" : "Stary Rynek 16", "Time" : "13:00 - 22:00", "Beer" : "5 - 8", "Shots" : "6 - 8", "Snacks" : "5 - 8", "Other" : "piwa bezalkoholowe, whisky, likier, darts, stół bilardowy", "Rating" : "4.9\/5.0" },
+	{ "Name" : "Volodimir", "PicID" : "4", "Address" : "Kramarska 62", "Time" : "17:00 - 02:00", "Beer" : "8 - 12", "Shots" : "8 - 10", "Snacks" : "4 - 12", "Other" : "piwa rzemieślnicze, piwa bezalkoholowe, whisky, likier, TV, stół bilardowy", "Rating" : "4.2\/5.0" },
+	{ "Name" : "Remiza", "PicID" : "5", "Address" : "Bułgarska 52", "Time" : "18:00 - 02:00", "Beer" : "7 - 10", "Shots" : "4 - 8", "Snacks" : "6 - 10", "Other" : "piwa rzemieślnicze, likier, TV, darts, stół bilardowy", "Rating" : "3.5\/5.0" }
+]
