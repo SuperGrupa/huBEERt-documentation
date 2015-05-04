@@ -51,22 +51,17 @@
 					</div>
 				</div>
 				
-				<div class="input-group">
-					<input type="text" class="form-control" placeholder="Pub, bar, piwo, atrakcje">
-					<span class="input-group-btn">
-						<button type="submit" class="btn btn-primary btn-md">Szukaj</button>
-					</span>
-				</div>
+				<input type="text" class="form-control" placeholder="Pub, bar, piwo, atrakcje">
 				
 				<div id="advanced">
 					<br/>
 					<div class="form-group">
-						<label class="col-sm-3 control-label">Cena piwa:</label>
+						<label class="col-sm-4 control-label">Cena piwa:</label>
 						<div class="col-sm-3">
 							<input type="number" class="form-control" placeholder="Od">
 						</div>
 						<div class="col-sm-2 text-center">
-							<i class="fa fa-minus" style="margin: 8px;"></i>
+							<span class="fa fa-minus" style="margin: 8px;"></span>
 						</div>
 						<div class="col-sm-3">
 							<input type="number" class="form-control" placeholder="Do">
@@ -74,12 +69,12 @@
 					</div>
 					
 					<div class="form-group">
-						<label class="col-sm-3 control-label">Godziny otwarcia:</label>
+						<label class="col-sm-4 control-label">Godziny otwarcia:</label>
 						<div class="col-sm-3">
 							<input type="number" class="form-control" placeholder="Od" min="0" max="24">
 						</div>
 						<div class="col-sm-2 text-center">
-							<i class="fa fa-minus" style="margin: 8px;"></i>
+							<span class="fa fa-minus" style="margin: 8px;"></span>
 						</div>
 						<div class="col-sm-3">
 							<input type="number" class="form-control" placeholder="Do" min="0" max="24">
@@ -122,9 +117,11 @@
 					</div-->
 				</div>
 				
-				<div align="center">
-					<button type="button" id="moreoptions" class="btn btn-primary btn-md" align="center" style="margin-top: 30px;" onclick="toggle_visibility('advanced')">
-						Więcej opcji
+				<div class="search-form" align="center">
+					<button type="submit" class="search-btn btn btn-primary btn-lg">Szukaj</button>
+					<br/>
+					<button type="button" id="moreoptions" class="btn btn-primary btn-sm" onclick="toggle_visibility('advanced')">
+						Zaawansowane wyszukiwanie
 					</button>
 				</div>
 			</form>

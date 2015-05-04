@@ -36,7 +36,67 @@
 		</header>
 		
 		<div class="container">
-			
+			<div class="bbox">
+				<table style="width:100%">
+					<colgroup>
+						<col width="160">
+					</colgroup>
+					<tr>
+						<td height="150" style="vertical-align:top">
+							<img src="user.png" style="width:150px;height:150px"><br/>
+						</td>
+						<td rowspan="2" style="border-left: 2px solid #DDD; padding:5px">
+							<div style="margin-top:20px;margin-bottom:20px;margin-left:20px">
+								<span style="font-size:250%;font-weight:bold">Twoje subskrypcje pubów (3):</span>
+							</div>
+							<table class="subs-pubs table table-hover">
+								<tbody>
+									<script type="text/javascript">
+										$(function () {
+											$.getJSON("data/pubs.json", function(data) {
+												$.each(data, function(i, obj) {
+													if (i == 0 || i == 1 || i == 4){
+														$(".table tbody").append(
+															"<tr onclick=\"window.document.location='klub.html'\">" +
+																"<td>" +
+																	"<img src=\"bar" + obj.PicID + ".jpg\" style=\"width:100px;height:100px\">" +
+																"</td>" +
+																"<td>" +
+																	obj.Name + "<br/>" +
+																	"<h5 class=\"address\">" +
+																		obj.Address + "<br/>" +
+																		obj.Time +
+																	"</h5>" +
+																"</td>" +
+																"<td class=\"prices\">" +
+																	"Piwo: " + obj.Beer + " zł" + "<br/>" +
+																	"Shoty: " + obj.Shots + " zł" + "<br/>" +
+																	"Przekąski: " + obj.Snacks + " zł" +
+																	"<hr>" + obj.Other +
+																"</td>" +
+																"<td class=\"score\">" +
+																	"Ocena:<br/>" +
+																	obj.Rating +
+																"</td>" +
+															"</tr>"
+														);
+													}
+												});
+											});
+										});
+									</script>
+								</tbody>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td style="vertical-align:top; text-align:center">
+							<span style="font-size:150%">QbekKawy</span><br/>
+							Poznań
+						</td>
+					</tr>
+				</table>
+			</div>
 		</div>
 		
 		<footer>

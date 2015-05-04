@@ -3,10 +3,10 @@ function toggle_visibility(id) {
 	var b = document.getElementById('moreoptions');
 	if(e.style.display == 'block') {
 		e.style.display = 'none';
-		b.innerHTML = "Więcej opcji";
+		b.innerHTML = "Zaawansowane wyszukiwanie";
 	}
 	else {
 		e.style.display = 'block';
-		b.innerHTML = "Mniej opcji";
+		b.innerHTML = "Proste wyszukiwanie";
 	}
 }

@@ -17,6 +17,20 @@ form {
 	font-size: 100%;
 }
 
+.search-form{
+	display: block;
+}
+
+.search-btn{
+	margin-top: 25px;
+	width: 150px;
+}
+
+#moreoptions{
+	margin-top: 10px;
+	width: 200px;
+}
+
 .bbox {
 	background-color: rgba(220, 200, 20, 0.75);
 	border: 3px solid rgba(140, 140, 140, 0.5);
@@ -57,6 +71,13 @@ form {
 
 .pub-title{
 	font-weight: bold;
+}
+
+.pub-pics{
+	width: 380px;
+	height: 250px;
+	padding: 0px;
+	border-color: grey;
 }
 
 .comments tr{
@@ -106,6 +127,12 @@ td.score {
 
 .list-group-item {
 	background-color: rgba(255, 255, 255, 0.25);
+}
+
+.subs-pubs tr{
+	background: rgba(220, 200, 20, 0.75);
+	border-top: 2px solid #DDD;
+	border-bottom: 2px solid #DDD;
 }
 
 header {
