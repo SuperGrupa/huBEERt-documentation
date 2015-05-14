@@ -1,0 +1,26 @@
+<h2>Komentarze</h2>
+<table class="comments table">
+	<tbody>
+		<script type="text/javascript">
+			$(function () {
+				$.getJSON("data/comments.json", function(data) {
+					$.each(data, function(i, obj) {
+						$(".comments tbody").append(
+							"<tr>" +
+								"<td>" +
+									obj.User +"<br/>" +
+									"<img src=\"user.png\" style=\"width:75px;height:75px\">" +
+								"</td>" +
+								"<td>" +
+									"<span class=\"timestamp\">" + obj.Time + "</span>" +
+									"<hr/>" +
+									obj.Text +
+								"</td>" +
+							"</tr>"
+						);
+					});
+				});
+			});
+		</script>
+	</tbody>
+</table>

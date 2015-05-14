@@ -74,10 +74,15 @@ form {
 }
 
 .pub-pics{
-	width: 380px;
-	height: 250px;
+	width: 600px;
+	height: 394.7368421052632px;
 	padding: 0px;
+	margin-top: 20px;
 	border-color: grey;
+}
+
+.club-content {
+	padding-left: 10px !important;
 }
 
 .comments tr{
