@@ -1,5 +1,21 @@
+<script>
+$(function () {
+	$('.club-tab').click(function () {
+		$('.club-content').load($(this).attr('href'));
+		return false;
+	});
+});
+</script>
 <script src="fotorama/fotorama.js"></script>
-<div class="fotorama pub-pics bbox">
+<nav class="navbar navbar-inverse">
+	<ul class="nav nav-tabs">
+		<li><a class="club-tab" href="klub_menu.html">Menu</a></li>
+		<li><a class="club-tab" href="klub_komentarze.html">Komentarze</a></li>
+		<li class="active"><a class="club-tab" href="klub_galeria.html">Galeria</a></li>
+		<li><a class="club-tab" href="klub_eventy.html">Eventy</a></li>
+	</ul>
+</nav>
+<div class="fotorama pub-pics">
 	<img src="bar1.jpg">
 	<img src="bar2.jpg">
 	<img src="bar3.jpg">

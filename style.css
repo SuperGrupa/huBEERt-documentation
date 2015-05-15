@@ -37,6 +37,11 @@ form {
 	border-radius: 15px;
 	padding: 20px;
 }
+.bbox:after{
+    clear: both;
+    content: "";
+    display: block;
+}
 
 .searched-city{
 	font-weight: bold;
@@ -69,21 +74,31 @@ form {
 	width: 85px;
 }
 
+.pub-info {
+	width: 32%;
+	float: left;
+	clear: none;
+}
+
+.club-content {
+	padding-left: 10px !important;
+	width: 65%;
+	float: left;
+	clear: none;
+}
+
 .pub-title{
 	font-weight: bold;
 }
 
 .pub-pics{
-	width: 600px;
-	height: 394.7368421052632px;
+	width: 100%;/*600px;*/
+	height: auto;/*394.7368421052632px;*/
 	padding: 0px;
 	margin-top: 20px;
-	border-color: grey;
+	border: none;
 }
 
-.club-content {
-	padding-left: 10px !important;
-}
 
 .comments tr{
 	background: rgba(220, 200, 20, 0.75);
@@ -177,4 +192,13 @@ footer img {
 #logo {
 	margin-top: 3px;
 	padding-left: 50px;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background-color: gray;
+}
+
+.navbar {
+    margin-bottom: 10px;
 }

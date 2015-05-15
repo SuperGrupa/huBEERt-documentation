@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl_PL">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Prototype for huBEERt project.">
+		<meta name="author" content="SuperGrupa">
+		
+		<title>huBEERt - Prototype GUI</title>
+		
+		<link href="bootstrap/css/bootstrap-3.3.1.css" rel="stylesheet">
+		<link href="bootstrap/css/bootstrap-theme-3.3.1.css" rel="stylesheet">
+		<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+		<link href="fotorama/fotorama.css" rel="stylesheet">
+		<link href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+		<link href="style.css" rel="stylesheet">
+
+		<script src="jquery/jquery.min.js"></script>
+		<script src="fotorama/fotorama.js"></script>
+		
+		<script>
+			$(function () {
+					$('.club-content').load('klub_menu.html');
+
+			});
+		</script>		
+	</head>
+	<body>
+		<header>
+			<nav class='navbar navbar-default'>
+				<div class='container-fluid'>
+					<a href="index.html">
+						<img src="logo.png" id="logo"/>
+					</a>
+					<div class='btn-group pull-right'>
+						<p class='navbar-text navbar-right'>
+							<a href="signUp.html">Zarejestruj</a>
+							|
+							<a href="signIn.html">Zaloguj</a>
+						</p>
+					</div>
+				</div>
+			</nav>
+		</header>
+		
+		<div class="container">
+			<div class="bbox" style="padding: 10px;">
+				<h1 class="pub-title">
+					U Szwagra
+					<img src="five-beers.jpg" style="width:10%;height:10%">
+				</h1>
+
+
+            <div class="pub-info">
+				<img src="map.png" width="250" height="250">
+				<h4><small>ul. Żydowska 55, Poznań</small></h4>
+				<h4><small>pon-czw, nie: 16:00 - 23:00<br/>pt, sob: 15:00 - 01:00</small></h4>
+            	<h4></br><small>wuja.szwagier@poczta.pl</small></h4>
+        	</div>
+		<div class="club-content"></div>
+      	</div>
+	</div>
+
+		<footer>
+			<h1>Best service in the world provided by&nbsp; 
+				<img src="github.png"/>
+				<a href="https://github.com/SuperGrupa" target="_blank">SuperGrupa</a>.
+			</h1>
+		</footer>
+		<script src="bootstrap/js/bootstrap-3.3.1.js"></script>
+	</body>
+</html>

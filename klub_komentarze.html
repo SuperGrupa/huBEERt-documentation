@@ -1,3 +1,19 @@
+<script>
+$(function () {
+	$('.club-tab').click(function () {
+		$('.club-content').load($(this).attr('href'));
+		return false;
+	});
+});
+</script>
+<nav class="navbar navbar-inverse">
+	<ul class="nav nav-tabs">
+		<li><a class="club-tab" href="klub_menu.html">Menu</a></li>
+		<li class="active"><a class="club-tab" href="klub_komentarze.html">Komentarze</a></li>
+		<li><a class="club-tab" href="klub_galeria.html">Galeria</a></li>
+		<li><a class="club-tab" href="klub_eventy.html">Eventy</a></li>
+	</ul>
+</nav>
 <h2>Komentarze</h2>
 <table class="comments table">
 	<tbody>
