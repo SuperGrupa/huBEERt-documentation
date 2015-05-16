@@ -12,7 +12,7 @@
 		<link href="bootstrap/css/bootstrap-3.3.1.css" rel="stylesheet">
 		<link href="bootstrap/css/bootstrap-theme-3.3.1.css" rel="stylesheet">
 		<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
-		<link href="style.css" rel="stylesheet">
+		<link href="mobile_style.css" rel="stylesheet">
 		
 		<script src="jquery/jquery.min.js"></script>
 		
@@ -21,14 +21,14 @@
 		<header>
 			<nav class='navbar navbar-default'>
 				<div class='container-fluid'>
-					<a href="index.html">
+					<a href="mobile_index.html">
 						<img src="images/logo.png" id="logo"/>
 					</a>
 					<div class='btn-group pull-right'>
 						<p class='navbar-text navbar-right'>
-							<a href="signUp.html">Zarejestruj</a>
+							<a href="mobile_signUp.html">Zarejestruj</a>
 							|
-							<a href="signIn.html">Zaloguj</a>
+							<a href="mobile_signIn.html">Zaloguj</a>
 						</p>
 					</div>
 				</div>
@@ -36,9 +36,14 @@
 		</header>
 		
 		<div class="container">
-			<form class="bbox" role="form" action="userProfile.html">
+			<form class="bbox" role="form" action="mobile_index.html">
 				<div class="form-group">
-					<label for="exampleInputEmail1">E-mail/Login</label>
+					<label for="exampleInputEmail1">Adres E-mail</label>
+					<input type="email" class="form-control" id="InputEmail">
+				</div>
+				
+				<div class="form-group">
+					<label for="exampleInputEmail1">Login</label>
 					<input type="email" class="form-control" id="InputLogin">
 				</div>
 				
@@ -47,13 +52,18 @@
 					<input type="password" class="form-control" id="InputPassword">
 				</div>
 				
+				<div class="form-group">
+					<label for="exampleInputPassword1">Powtórz hasło</label>
+					<input type="password" class="form-control" id="InputPassword2">
+				</div>
+				
 				<div class="checkbox">
 					<label>
-						<input type="checkbox"> Zapamiętaj mnie
+						<input type="checkbox"> Potwierdzam, że zapoznałem się z regulaminem i mam powyżej 18 lat.
 					</label>
 				</div>
 				
-				<button type="submit" class="btn btn-default">Zaloguj</button>
+				<button type="submit" class="btn btn-default">Zarejestruj</button>
 			</form>
 		</div>
 		
@@ -61,7 +71,7 @@
 			<h1>Best service in the world provided by&nbsp;
 				<img src="images/github.png"/>
 				<a href="https://github.com/SuperGrupa" target="_blank">SuperGrupa</a>.
-				<small><a href="mobile_index.html">[mobile]</a></small>
+				<small><a href="index.html">[desktop]</a></small>
 			</h1>
 		</footer>
 		

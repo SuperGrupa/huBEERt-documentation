@@ -12,7 +12,7 @@
 		<link href="bootstrap/css/bootstrap-3.3.1.css" rel="stylesheet">
 		<link href="bootstrap/css/bootstrap-theme-3.3.1.css" rel="stylesheet">
 		<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
-		<link href="style.css" rel="stylesheet">
+		<link href="mobile_style.css" rel="stylesheet">
 		
 		<script src="jquery/jquery.min.js"></script>
 		
@@ -21,14 +21,14 @@
 		<header>
 			<nav class='navbar navbar-default'>
 				<div class='container-fluid'>
-					<a href="index.html">
+					<a href="mobile_index.html">
 						<img src="images/logo.png" id="logo"/>
 					</a>
 					<div class='btn-group pull-right'>
 						<p class='navbar-text navbar-right'>
-							<a href="signUp.html">Zarejestruj</a>
+							<a href="mobile_signUp.html">Zarejestruj</a>
 							|
-							<a href="signIn.html">Zaloguj</a>
+							<a href="mobile_signIn.html">Zaloguj</a>
 						</p>
 					</div>
 				</div>
@@ -36,7 +36,7 @@
 		</header>
 		
 		<div class="container">
-			<div class="bbox" style="text-align:center;">
+			<div style="text-align:center;">
 				<h1 style="margin-top:0px;margin-bottom:0px">Proponowane puby i bary w mieście: <span class="searched-city">Poznań</span></h1>
 			</div>
 			<br/>
@@ -47,7 +47,7 @@
 							$.getJSON("data/pubs.json", function(data) {
 								$.each(data, function(i, obj) {
 									$(".results tbody").append(
-										"<tr onclick=\"window.document.location='klub.html'\">" +
+										"<tr onclick=\"window.document.location='mobile_klub.html'\">" +
 											"<td>" +
 												"<img src=\"images/bar" + obj.PicID + ".jpg\" style=\"width:100px;height:100px\">" +
 											"</td>" +
@@ -82,7 +82,7 @@
 			<h1>Best service in the world provided by&nbsp; 
 				<img src="images/github.png"/>
 				<a href="https://github.com/SuperGrupa" target="_blank">SuperGrupa</a>.
-				<small><a href="mobile_index.html">[mobile]</a></small>
+				<small><a href="index.html">[desktop]</a></small>
 			</h1>
 		</footer>
 		
