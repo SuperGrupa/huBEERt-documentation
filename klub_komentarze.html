@@ -9,7 +9,7 @@ $(function () {
 <nav class="navbar navbar-inverse">
 	<ul class="nav nav-tabs">
 		<li><a class="club-tab" href="klub_menu.html">Menu</a></li>
-		<li class="active"><a class="club-tab">Komentarze</a></li>
+		<li class="active"><a class="club-tab">Komentarze (6)</a></li>
 		<li><a class="club-tab" href="klub_galeria.html">Galeria</a></li>
 		<li><a class="club-tab" href="klub_eventy.html">Eventy</a></li>
 	</ul>
@@ -29,6 +29,11 @@ $(function () {
 								"</td>" +
 								"<td>" +
 									"<span class=\"timestamp\">" + obj.Time + "</span>" +
+									"<span class=\"vote\">" +
+										"<img src=\"images/plus.gif\" style=\"padding-right: 5px;\">" + 
+										obj.Vote +
+										"<img src=\"images/minus.gif\" style=\"padding-left: 5px;\">" + 
+									"</span>" + 
 									"<hr/>" +
 									obj.Text +
 								"</td>" +
@@ -40,3 +45,6 @@ $(function () {
 		</script>
 	</tbody>
 </table>
+<div class="more-coms" align="center">
+	<a href="">Pokaż więcej (12)</a>
+</div>

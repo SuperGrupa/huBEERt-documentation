@@ -120,9 +120,24 @@ form {
 	color: #444444;
 }
 
+.coms {
+	padding-top: 10px;
+	font-size: 12px;
+}
+.more-coms {
+	padding-bottom:10px;
+}
+
+a:not(.club-tab):not(.user-tab):not(.btn):not(.navbar-right):not(.navbar-right a){
+	color: #333;
+}
+
 .timestamp{
 	font-size: 80%;
-	
+}
+
+.vote{
+	padding-left: 20px;
 }
 
 .address{
@@ -153,6 +168,27 @@ td.score {
 	background: rgba(220, 200, 20, 0.75);
 	border-top: 2px solid #DDD;
 	border-bottom: 2px solid #DDD;
+}
+
+.subs-pubs tr:hover{
+	background: #FFFFFF !important;
+}
+
+.subs-pubs td:nth-child(1){
+	width: 100px;
+}
+
+.subs-pubs td:nth-child(2){
+	width: 180px;
+	font-size: 150%;
+}
+
+.subs-pubs td:nth-child(2) h5{
+	color: #444444;
+}
+
+.subs-pubs td:nth-child(4){
+	width: 120px;
 }
 
 header {

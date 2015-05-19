@@ -1,0 +1,51 @@
+<script>
+$(function () {
+	$('.user-tab').click(function () {
+		$('.user-content').load($(this).attr('href'));
+		return false;
+	});
+});
+</script>
+<nav class="navbar navbar-inverse">
+	<ul class="nav nav-tabs">
+		<li class="active"><a class="user-tab">Subskrypcje (3)</a></li>
+		<li><a class="user-tab" href="user_comments.html">Komentarze (1)</a></li>
+		<li><a class="user-tab" href="user_settings.html">Ustawienia</a></li>
+	</ul>
+</nav>
+
+<table class="subs-pubs table table-hover">
+	<tbody>
+		<script type="text/javascript">
+			$(function () {
+				$.getJSON("data/pubs.json", function(data) {
+					$.each(data, function(i, obj) {
+						if (i == 0 || i == 1 || i == 4){
+							$(".table tbody").append(
+								"<tr onclick=\"window.document.location='klub.html'\">" +
+									"<td>" +
+										"<img src=\"images/bar" + obj.PicID + ".jpg\" style=\"width:100px;height:100px\">" +
+									"</td>" +
+									"<td>" +
+										obj.Name +
+									"</td>" +
+									"<td>" +
+										"<h4>" +
+											"<img src=\"images/isOpen" + obj.IsOpen + ".png\" style=\"width:13px;height:13px;\">Dzisiaj:<br/>" +
+											obj.Time +
+										"</h4>" +
+									"</td>" +
+									"<td>" +
+										"<h5>" +
+											obj.Address + "<br/>" +
+										"</h5>" +
+									"</td>" +
+								"</tr>"
+							);
+						}
+					});
+				});
+			});
+		</script>
+	</tbody>
+</table>

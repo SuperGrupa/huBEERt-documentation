@@ -1,0 +1,15 @@
+<script>
+$(function () {
+	$('.user-tab').click(function () {
+		$('.user-content').load($(this).attr('href'));
+		return false;
+	});
+});
+</script>
+<nav class="navbar navbar-inverse">
+	<ul class="nav nav-tabs">
+		<li><a class="user-tab" href="user_subscriptions.html">Subskrypcje (3)</a></li>
+		<li class="active"><a class="user-tab">Komentarze (1)</a></li>
+		<li><a class="user-tab" href="user_settings.html">Ustawienia</a></li>
+	</ul>
+</nav>
