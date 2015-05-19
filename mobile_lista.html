@@ -36,8 +36,9 @@
 		</header>
 		
 		<div class="container">
-			<div style="text-align:center;">
-				<h1 style="margin-top:0px;margin-bottom:0px">Proponowane puby i bary w mieście: <span class="searched-city">Poznań</span></h1>
+			<div class="bbox" style="text-align:center;">
+				<h1 style="margin-top:0px;margin-bottom:0px">Szukane w mieście <span class="searched-city">Poznań</span>:<br/></h1>
+				<h3>tyskie klasyczne rynek</h3>
 			</div>
 			<br/>
 			<table class="results table table-hover">
@@ -55,6 +56,7 @@
 												obj.Name + "<br/>" +
 												"<h5 class=\"address\">" +
 													obj.Address + "<br/>" +
+													"<img src=\"images/isOpen" + obj.IsOpen + ".png\" style=\"width:13px;height:13px;\">Dzisiaj:<br/>" +
 													obj.Time +
 												"</h5>" +
 											"</td>" +
@@ -66,7 +68,8 @@
 											"</td>" +
 											"<td class=\"score\">" +
 												"Ocena:<br/>" +
-												obj.Rating +
+												obj.Rating + "<br/>" +
+												"<span class=\"coms\">Skomentowało(" + obj.Comments + ")</span>" + 
 											"</td>" +
 										"</tr>"
 									);

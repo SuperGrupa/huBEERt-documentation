@@ -1,3 +1,7 @@
+* {
+	transition: all 0s;
+}
+
 .navbar {
 	margin-bottom: 100px;
 }
@@ -8,6 +12,11 @@
 
 body {
 	background: gold;
+	font-size: 200%;
+}
+
+nav {
+	font-size: 100% !important;
 }
 
 .container {
@@ -28,12 +37,16 @@ form {
 
 .search-btn{
 	margin-top: 25px;
-	width: 150px;
+	width: 80%;
+	height: 50px;
+	font-size: 125%;
 }
 
-#moreoptions{
+.moreoptions{
 	margin-top: 10px;
-	width: 200px;
+	width: 65%;
+	height: 35px;
+	font-size: 80%;
 }
 
 .bbox {
@@ -80,20 +93,40 @@ form {
 }
 
 .pub-info {
-	width: 32%;
-	float: left;
-	clear: none;
+	width: 100%;
+	float: none;
+	clear: both;
+	text-align: center;
+}
+
+.pubphoto img {
+	max-width:100%;
+	display: block;
+	height: auto !important;
+	position: relative;
+	top: -150px;
+}
+
+.pubphoto {
+	max-height: 100px;
+	overflow: hidden;
+	width:90%;
+	margin: 0 auto;
+	border: 2px solid;
+	border-color: blue;
 }
 
 .club-content {
 	padding-left: 10px !important;
-	width: 65%;
+	width: 100%;
 	float: left;
 	clear: none;
+	margin: 0 auto;
 }
 
 .pub-title{
 	font-weight: bold;
+	font-size: 400%;
 }
 
 .pub-pics{
@@ -206,4 +239,27 @@ footer img {
 
 .navbar {
     margin-bottom: 10px;
+}
+
+.form-control {
+	height: 50px;
+}
+
+.navbar {
+	font-size: 60%;
+}
+
+#profile_link {
+	color: gray;
+}
+.vote {
+    padding-left: 20px;
+}
+
+.mobile_menu {
+	position: fixed;
+	top: 2px;
+	left: 5px;
+	font-weight: normal !important;
+	z-index: 5;
 }
