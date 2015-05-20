@@ -9,8 +9,8 @@ $(function () {
 <nav class="navbar navbar-inverse">
 	<ul class="nav nav-tabs">
 		<li class="active"><a class="user-tab">Subskrypcje (3)</a></li>
-		<li><a class="user-tab" href="user_comments.html">Komentarze (1)</a></li>
-		<li><a class="user-tab" href="user_settings.html">Ustawienia</a></li>
+		<li><a class="user-tab" href="mobile_user_comments.html">Komentarze (1)</a></li>
+		<li><a class="user-tab" href="mobile_user_settings.html">Ustawienia</a></li>
 	</ul>
 </nav>
 
@@ -22,7 +22,7 @@ $(function () {
 					$.each(data, function(i, obj) {
 						if (i == 0 || i == 1 || i == 4){
 							$(".table tbody").append(
-								"<tr onclick=\"window.document.location='klub.html'\">" +
+								"<tr onclick=\"window.document.location='mobile_klub.html'\">" +
 									"<td>" +
 										"<img src=\"images/bar" + obj.PicID + ".jpg\" style=\"width:100px;height:100px\">" +
 									"</td>" +
