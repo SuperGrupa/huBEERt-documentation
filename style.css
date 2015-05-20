@@ -124,11 +124,11 @@ form {
 	padding-top: 10px;
 	font-size: 12px;
 }
-.more-coms {
+.more-coms{
 	padding-bottom:10px;
 }
 
-a:not(.club-tab):not(.user-tab):not(.btn):not(.navbar-right):not(.navbar-right a){
+.delink{
 	color: #333;
 }
 
@@ -138,6 +138,10 @@ a:not(.club-tab):not(.user-tab):not(.btn):not(.navbar-right):not(.navbar-right a
 
 .vote{
 	padding-left: 20px;
+}
+
+table th h2{
+	font-weight: bold;
 }
 
 .address{

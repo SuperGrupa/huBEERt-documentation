@@ -1,6 +1,6 @@
 [
 	{
-		"User" : "<a href=\"userProfile.html\" id=\"profile_link\">QbekKawy</a>",
+		"User" : "<a class=\"delink\" href=\"userProfile.html\">QbekKawy</a>",
 		"Time" : "2015-04-15 20:43:18",
 		"Text" : "Wczoraj byłem pierwszy raz i z pewnością nie ostatni. Wszystkich gorąco zachęcam do wbijania.",
 		"Vote" : "2"
